@@ -29,3 +29,7 @@ go mod init $project_name
 cd $project_name
 go build
 ```
+
+# setup the docker-compose.yml
+
+[golang with docker](https://levelup.gitconnected.com/docker-for-go-development-a27141f36ba9)
