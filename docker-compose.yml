@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  books_list_server:
+    build: .
+    container_name: books_list_server
+    environment:
+      - ELEPHANT_SQL_URL=${ELEPHANT_SQL_URL}
+    ports:
+      - "${PORT}:8000"

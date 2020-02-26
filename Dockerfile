@@ -1,0 +1,13 @@
+FROM golang:1.12.14
+
+ARG ELEPHANT_SQL_URL
+
+ENV ELEPHANT_SQL_URL=${ELEPHANT_SQL_URL}
+
+WORKDIR /app
+
+COPY ./ /app
+
+RUN go mod download
+
+ENTRYPOINT go run main.go
